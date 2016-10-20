@@ -7,3 +7,51 @@
  License:      GNU General Public License v2 or later
  License URI:  http://www.gnu.org/licenses/gpl-2.0.html
 */
+
+.pets-holder {
+  padding: 8.3333%;
+  overflow: hidden;
+}
+
+.pet-thumb{
+  background: #fff;
+  width: 45%;
+  float: left;
+  margin: 0 0 50px 0;
+  padding: 0;
+}
+
+.pet-thumb:nth-child(even){
+  margin-left: 5%;
+}
+
+.pet-thumb:nth-child(odd){
+  margin-right: 5%;
+}
+
+.pet-thumb .info{
+  padding: 10%;
+}
+
+.pet-thumb .info h4{
+  font-size: 30px;
+}
+
+.pet-thumb .info span{
+  display: block;
+}
+
+.pet-thumb .info a{
+  margin-top: 10px;
+  display: block;
+  width: 100%;
+  border: 1px solid #ddd;
+  text-align: center;
+  font-size: 30px;
+}
+
+.pet-thumb .info a:hover{
+  color: #fff;
+  border: 1px solid #000;
+  background-color: #000;
+}

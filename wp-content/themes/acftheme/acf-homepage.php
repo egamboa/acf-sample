@@ -55,13 +55,27 @@ get_header(); ?>
 
 		endif;
 		?>
+		<p></p>
+		<header class="page-header">
+			<h1 class="page-title">Featured Cats</h1>
+		</header>
     <div class="pets-holder">
-      <div class="pet">
-        I should be a pet
-      </div>
-      <div class="pet">
-        I should be a pet
-      </div>
+			<?php
+				$args = array(
+				'post_type' => 'pets',
+				'numberposts' => 6,
+				'orderby' => 'rand',
+				'meta_key'		=> 'featured',
+				'meta_value'	=> '1'
+				);
+				$the_pets = new WP_Query( $args );
+			?>
+			<?php if ( $the_pets->have_posts() ) : while ( $the_pets->have_posts() ) : $the_pets->the_post();
+		    get_template_part( 'content', 'petThumb');
+			endwhile; else : ?>
+			    <p>There were no featured pets :( </p>
+			<?php endif;
+			wp_reset_postdata(); ?>
     </div>
 		</main><!-- .site-main -->
 	</div><!-- .content-area -->
