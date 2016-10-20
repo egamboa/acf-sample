@@ -63,7 +63,7 @@ get_header(); ?>
 			<?php
 				$args = array(
 				'post_type' => 'pets',
-				'numberposts' => 6,
+				'numberposts' => 4,
 				'orderby' => 'rand',
 				'meta_key'		=> 'featured',
 				'meta_value'	=> '1'

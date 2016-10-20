@@ -10,7 +10,7 @@
   <div class="pet-image-holder">
     <?php
     if ( has_post_thumbnail() ) {
-      the_post_thumbnail();
+      the_post_thumbnail( 'thumbnail' );
     }
     ?>
   </div>
