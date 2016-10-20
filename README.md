@@ -5,6 +5,8 @@
 This is a Wordpress site source files, containing a SQL backup, the presentation used
 for the meet-up and all uploaded data to make the example work.
 
+You can find the presentation in the Assets folder for reference.
+
 ##Requirements
 
 Here is a detail list of the technical requirements to run this project in a local environment.
