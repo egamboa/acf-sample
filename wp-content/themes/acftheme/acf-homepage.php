@@ -57,7 +57,7 @@ get_header(); ?>
 		?>
 		<p></p>
 		<header class="page-header">
-			<h1 class="page-title">Featured Cats</h1>
+			<h1 class="page-title">Featured Pets</h1>
 		</header>
     <div class="pets-holder">
 			<?php

@@ -43,4 +43,4 @@ make sure you check this 2 links:
 
 - Make sure you update your permalinks: https://codex.wordpress.org/Using_Permalinks
 - Correct the Site URL and Home values in the Config SQL Table. https://codex.wordpress.org/Changing_The_Site_URL
-- Else contact some you trust, or send me an email: andres@wearestateside.com
+- Else contact someone you trust, or send me an email: andres@wearestateside.com

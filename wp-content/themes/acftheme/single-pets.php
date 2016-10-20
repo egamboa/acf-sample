@@ -19,8 +19,35 @@ get_header(); ?>
 			 */
 			get_template_part( 'content', 'pet' );
 
+      ?>
 
+      <p></p>
+  		<header class="page-header">
+  			<h1 class="page-title">Family</h1>
+  		</header>
+      <div class="pets-holder">
+  			<?php
 
+          $parents = get_field('parents');
+
+  				$args = array(
+  				'post_type' => 'pets',
+  				'numberposts' => 4,
+  				'orderby' => 'rand',
+  				'meta_key'		=> 'featured',
+  				'meta_value'	=> '1'
+  				);
+  				$the_pets = new WP_Query( $args );
+  			?>
+  			<?php if ( $the_pets->have_posts() ) : while ( $the_pets->have_posts() ) : $the_pets->the_post();
+  		    get_template_part( 'content', 'petThumb');
+  			endwhile; else : ?>
+  			    <p>There were no featured pets :( </p>
+  			<?php endif;
+  			wp_reset_postdata(); ?>
+      </div>
+
+      <?php
 			// If comments are open or we have at least one comment, load up the comment template.
 			if ( comments_open() || get_comments_number() ) :
 				comments_template();
