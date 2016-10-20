@@ -50,6 +50,10 @@
   font-size: 30px;
 }
 
+.pet-thumb .pet-image-holder img{
+  width: 100%;
+}
+
 .pet-thumb .info a:hover{
   color: #fff;
   border: 1px solid #000;
